@@ -1,0 +1,43 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Actualmente",
+    title: "Asistente de Área de TI & Desarrollo",
+    company: "Rodriguez Angobaldo Abogados",
+    description:
+      "Responsable de la planificación, desarrollo y mantenimiento de sistemas internos como el sistema de requerimientos, sistema de recordatorios automáticos y directorio de anexos, los cuales han permitido mejorar la eficiencia y productividad de los colaboradores.",
+  },
+  {
+    date: "Diciembre 2022",
+    title: "Full Stack Developer",
+    company: "Freelancer",
+    description:
+      "Desarrollo completo de un sistema de reporte vehicular, incluyendo diseño de interfaces, modelado de base de datos, y creación de aplicaciones web y móviles. Implementación de despliegue y mantenimiento continuo.",
+  },
+  {
+    date: "Junio 2022",
+    title: "Full Stack Developer (prácticas profesionales)",
+    company: "Dijisa",
+    description:
+      "Desarrollo del módulo web para el manejo de asistencia del personal, incluyendo diseño, desarrollo e integración con el sistema existente.",
+  },
+  {
+    date: "Octubre 2021",
+    title: "Full Stack Developer",
+    company: "Asociación Nacional de Árbitros del Perú",
+    description:
+      "Creación completa de la aplicación web oficial de la asociación, incluyendo diseño de interfaces, modelado de base de datos y despliegue.",
+  }
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
